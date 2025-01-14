@@ -120,3 +120,44 @@ Here are examples of commonly used form controls with Tailwind CSS, including te
   </div>
 </div>
 ```
+
+### Form Example (Combined)
+```html
+<form class="p-4 bg-white rounded shadow-md max-w-md">
+  <div class="mb-4">
+    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+    <input
+      type="email"
+      id="email"
+      class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      placeholder="Enter your email"
+    />
+  </div>
+
+  <div class="mb-4">
+    <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+    <input
+      type="password"
+      id="password"
+      class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      placeholder="Enter your password"
+    />
+  </div>
+
+  <div class="flex items-center mb-4">
+    <input
+      type="checkbox"
+      id="remember"
+      class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+    />
+    <label for="remember" class="ml-2 block text-sm text-gray-700">Remember me</label>
+  </div>
+
+  <button
+    type="submit"
+    class="bg-blue-500 text-white font-medium py-2 px-4 rounded shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+  >
+    Login
+  </button>
+</form>
+```
